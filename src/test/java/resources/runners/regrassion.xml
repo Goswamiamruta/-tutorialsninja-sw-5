@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="regrassion Suite" verbose="1">
+    <listeners>
+        <listener class-name="com.tutorialsninja.demo.customlisteners.CustomListeners"/>
+    </listeners>
+    <test name="regrassion Test">
+        <groups>
+            <run>
+                <include name="regrassion"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.tutorialsninja.demo.testsuite.MyAccountsTest"></class>
+            <class name="com.tutorialsninja.demo.testsuite.DesktopsTest"></class>
+            <class name="com.tutorialsninja.demo.testsuite.LaptopsAndNotebooksTest"></class>
+            <class name="com.tutorialsninja.demo.testsuite.TopMenuTest"></class>
+        </classes>
+    </test>
+</suite>
